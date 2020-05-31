@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color:white;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f2f2f2;
+}
+nav{
+    background: #2e3047;
+    background: -webkit-linear-gradient(to right, #707793, #2e3047);
+    background: linear-gradient(to right, #707793, #2e3047);
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 40px; 
+}
+.menu{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+.item{
+    float: left;
+    background: transparent;
+    margin: 0 5px;
+}
+.item a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+
+}
+.item a:hover{
+    color: #3bba9c;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #3bba9c,
+                0 0 5px #3bba9c;
+}
+.subitem a{
+    text-align: center;
+    line-height: 50px;
+    background: #2e3047;
+}
+.subitem a:hover{
+    color:#33ffff;
+    box-shadow: none;
+}
+.submenu{
+    position: absolute;
+    top: 90px;
+    background: #2e3047;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+.subsubmenu{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+.subitem:hover > ul{
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+}
+.item:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+.subitem{
+    position: relative;
+    margin: 0 ;
+    height: 50px;
+    width: 170px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.subsubitem{
+    position: relative;
+    float: none;
+    margin: 0;
+    left: 170px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    top: -50px;
+    display: list-item;
+    background: #2e3047;
+    
+}
+.button{
+    float: left;
+    background:transparent;
+    margin: 0 5px;
+}
+.button a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    color:cyan;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #33ffff;
+
+}
+.button a:hover{
+    text-decoration: none;
+    transition: all .25s;
+    color: black;
+    background: black;
+}
